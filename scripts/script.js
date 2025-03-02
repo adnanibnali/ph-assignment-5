@@ -35,7 +35,7 @@ for (const completedBtn of completedBtns) {
     const dynamicTittle = document.createElement("span");
     dynamicTittle.innerText = taskHeading.innerText;
     const staticAt = document.createElement("span");
-    staticAt.innerText = "at ";
+    staticAt.innerText = " at ";
     const dynamicTime = document.createElement("span");
     dynamicTime.innerText = new Date().toLocaleTimeString();
     // append history
@@ -53,4 +53,12 @@ for (const completedBtn of completedBtns) {
 const clearHistoryBtn = document.getElementById("clearHistoryBtn");
 clearHistoryBtn.addEventListener("click", function () {
   histories.innerHTML = "";
+});
+
+// set random bg color
+const colorWheel = document.getElementById("colorWheel");
+colorWheel.addEventListener("click", function () {
+  const randomNum = parseInt(Math.random() * 360);
+  const hsla = `hsla(${randomNum}, 98%, 60%, 0.2)`;
+  document.body.style.backgroundColor = hsla;
 });
