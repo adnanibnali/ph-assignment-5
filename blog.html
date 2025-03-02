@@ -32,26 +32,26 @@
           </button>
         </a>
       </nav>
-      <div class="w-[100%] rounded-xl join join-vertical bg-base-100">
-        <div class="collapse collapse-arrow join-item border-base-300 border">
-          <input type="radio" name="my-accordion-4" checked="checked" />
-          <div class="collapse-title font-semibold">
+      <div class="w-[100%] flex flex-col gap-5">
+        <div class="blog flex flex-col gap-3 bg-white p-5 rounded-xl">
+          <p class="question font-bold">
             Question-1: What are the different ways to select an element in the
             DOM?
-          </div>
-          <div class="collapse-content text-sm">
+          </p>
+          <div class="devider w-full border-b border-gray-300"></div>
+          <p class="answer opacity-70 w-[80%]">
             getElementById(''), getElementsByClassName(''),
             getElementsByTagName(''), querySelector(''), querySelectorAll(''),
             .parentNode are different ways to select an element in the DOM
-          </div>
+          </p>
         </div>
-        <div class="collapse collapse-arrow join-item border-base-300 border">
-          <input type="radio" name="my-accordion-4" />
-          <div class="collapse-title font-semibold">
+        <div class="blog flex flex-col gap-3 bg-white p-5 rounded-xl">
+          <p class="question font-bold">
             Question-2: What is the difference between innerHTML, innerText, and
             textContent ?
-          </div>
-          <div class="collapse-content text-sm">
+          </p>
+          <div class="devider w-full border-b border-gray-300"></div>
+          <p class="answer opacity-70 w-[80%]">
             1. With innerHTML, we can get and set the HTML contents inside the
             tag.
             <br />
@@ -60,37 +60,37 @@
             <br />
             3. With textContent, we can get and set the text content inside the
             HTML tag, even it is hidden. we can not do this with innerText.
-          </div>
+          </p>
         </div>
-        <div class="collapse collapse-arrow join-item border-base-300 border">
-          <input type="radio" name="my-accordion-4" />
-          <div class="collapse-title font-semibold">
+        <div class="blog flex flex-col gap-3 bg-white p-5 rounded-xl">
+          <p class="question font-bold">
             Question-3: What is event delegation in the DOM?
-          </div>
-          <div class="collapse-content text-sm">
+          </p>
+          <div class="devider w-full border-b border-gray-300"></div>
+          <p class="answer opacity-70 w-[80%]">
             Event delegation is something where we don't add eventListener to
             evry child. Instead we add eventListener to parrent and know in
             which child event is hapening with the help of event bubbling.
-          </div>
+          </p>
         </div>
-        <div class="collapse collapse-arrow join-item border-base-300 border">
-          <input type="radio" name="my-accordion-4" />
-          <div class="collapse-title font-semibold">
+        <div class="blog flex flex-col gap-3 bg-white p-5 rounded-xl">
+          <p class="question font-bold">
             Question-4: What is event bubbling in the DOM?
-          </div>
-          <div class="collapse-content text-sm">
+          </p>
+          <div class="devider w-full border-b border-gray-300"></div>
+          <p class="answer opacity-70 w-[80%]">
             Event bubbling is something where when an event happens, it is
             passed through it's parrent element or bubble up, till the root of
             the document.
-          </div>
+          </p>
         </div>
-        <div class="collapse collapse-arrow join-item border-base-300 border">
-          <input type="radio" name="my-accordion-4" />
-          <div class="collapse-title font-semibold">
+        <div class="blog flex flex-col gap-3 bg-white p-5 rounded-xl">
+          <p class="question font-bold">
             Question-5: How do you create, add, and remove elements using
             JavaScript?
-          </div>
-          <div class="collapse-content text-sm">
+          </p>
+          <div class="devider w-full border-b border-gray-300"></div>
+          <p class="answer opacity-70 w-[80%]">
             1. To create an element in js we use document.createElement("")
             <br />
             2. To add an elemet by JavaScript we use .appendChild('') and
@@ -99,7 +99,7 @@
             3. To remove element by JavaScript we use remove(), removeChild('')
             and we also select the parrent element and set innerHTML to emty
             string to delete all child element.for example parrent.innerHTML=''
-          </div>
+          </p>
         </div>
       </div>
     </section>
