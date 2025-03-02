@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>DevBoard</title>
     <link rel="stylesheet" href="styles/style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@5"
@@ -63,14 +63,17 @@
                 <p id="taskAssigned" class="text-3xl font-bold">6</p>
               </div>
             </div>
-            <div
-              id="discover"
-              class="w-[calc((100%-48px)/2)] h-32 rounded-xl bg-linear-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] flex justify-center items-center relative cursor-pointer">
-              <img src="assets/board.png" alt="" class="absolute left-6" />
-              <p class="text-2xl text-white">
-                Discover Something New <br />Today!
-              </p>
-            </div>
+            <a href="blog.html" class="w-[calc((100%-48px)/2)] h-32 rounded-xl">
+              <button
+                id="discover"
+                class="w-full h-full rounded-xl bg-linear-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] flex justify-center items-center relative cursor-pointer">
+                <img src="assets/board.png" alt="" class="absolute left-6" />
+                <p class="text-2xl text-white">
+                  Discover Something New <br />Today!
+                </p>
+              </button>
+            </a>
+
             <div
               id="currentDateContainer"
               class="bg-[#F4F7FF] w-[calc((100%-48px)/4)] h-32 flex justify-center items-center gap-5 py-3 px-5 rounded-xl">

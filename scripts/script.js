@@ -23,8 +23,13 @@ for (const completedBtn of completedBtns) {
     const taskAssigned = document.getElementById("taskAssigned");
     const totalCompletedTasks = document.getElementById("totalCompletedTasks");
     // do tasks dynamically
+    const taskAssignedMath = parseInt(taskAssigned.innerText) - 1;
+    alert("Board updated successfully");
+    if (taskAssignedMath === 0) {
+      alert("Congrats!! You have completed all the current tasks");
+    }
     completedBtn.setAttribute("disabled", "true");
-    taskAssigned.innerText = parseInt(taskAssigned.innerText) - 1;
+    taskAssigned.innerText = taskAssignedMath;
     totalCompletedTasks.innerText = parseInt(totalCompletedTasks.innerText) + 1;
     // create history
     const history = document.createElement("div");

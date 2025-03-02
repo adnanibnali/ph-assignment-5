@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blogs</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body
+    style="background-color: hsla(214, 98%, 60%, 0.2)"
+    class="poppinsThin min-h-[100vh]">
+    >
+    <section
+      id="herro"
+      class="max-w-[96rem] mx-auto pt-5 flex flex-col gap-5 items-center">
+      <nav
+        id="navbar"
+        class="w-full flex justify-between bg-white p-6 rounded-2xl">
+        <!-- branding section -->
+        <div id="branding" class="flex items-center justify-center gap-3">
+          <img src="assets/logo.png" alt="" />
+          <span class="text-3xl">Dev<span class="font-bold">Board</span> </span>
+        </div>
+        <a href="index.html">
+          <button class="btn btn-primary bg-[#3752FD] rounded-lg border-none">
+            Back to Desk
+          </button>
+        </a>
+      </nav>
+      <div class="w-[100%] rounded-xl join join-vertical bg-base-100">
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" checked="checked" />
+          <div class="collapse-title font-semibold">
+            Question-1: What are the different ways to select an element in the
+            DOM?
+          </div>
+          <div class="collapse-content text-sm">
+            getElementById(''), getElementsByClassName(''),
+            getElementsByTagName(''), querySelector(''), querySelectorAll(''),
+            .parentNode are different ways to select an element in the DOM
+          </div>
+        </div>
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" />
+          <div class="collapse-title font-semibold">
+            Question-2: What is the difference between innerHTML, innerText, and
+            textContent ?
+          </div>
+          <div class="collapse-content text-sm">
+            1. With innerHTML, we can get and set the HTML contents inside the
+            tag.
+            <br />
+            2. With innerText, we can get and set the text content inside the
+            HTML tag.
+            <br />
+            3. With textContent, we can get and set the text content inside the
+            HTML tag, even it is hidden. we can not do this with innerText.
+          </div>
+        </div>
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" />
+          <div class="collapse-title font-semibold">
+            Question-3: What is event delegation in the DOM?
+          </div>
+          <div class="collapse-content text-sm">
+            Event delegation is something where we don't add eventListener to
+            evry child. Instead we add eventListener to parrent and know in
+            which child event is hapening with the help of event bubbling.
+          </div>
+        </div>
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" />
+          <div class="collapse-title font-semibold">
+            Question-4: What is event bubbling in the DOM?
+          </div>
+          <div class="collapse-content text-sm">
+            Event bubbling is something where when an event happens, it is
+            passed through it's parrent element or bubble up, till the root of
+            the document.
+          </div>
+        </div>
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" />
+          <div class="collapse-title font-semibold">
+            Question-5: How do you create, add, and remove elements using
+            JavaScript?
+          </div>
+          <div class="collapse-content text-sm">
+            1. To create an element in js we use document.createElement("")
+            <br />
+            2. To add an elemet by JavaScript we use .appendChild('') and
+            append('')
+            <br />
+            3. To remove element by JavaScript we use remove(), removeChild('')
+            and we also select the parrent element and set innerHTML to emty
+            string to delete all child element.for example parrent.innerHTML=''
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
