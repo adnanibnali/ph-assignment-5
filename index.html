@@ -40,8 +40,10 @@
       </nav>
       <!-- NAVBAR ENDS HERE -->
       <!-- DASHBOARD SECTION STARTS HERE -->
-      <section id="dashboard">
-        <div id="dashboardOverview" class="w-fit bg-white mt-5 p-6 rounded-2xl">
+      <section id="dashboard" class="flex gap-5 mt-5">
+        <div
+          id="dashboardOverview"
+          class="w-[calc(80%-10px)] bg-white p-6 rounded-2xl">
           <div
             id="dashboardTopSection"
             class="flex items-center justify-center gap-6">
@@ -255,7 +257,39 @@
             <!-- CARD ENDS HERE -->
           </div>
         </div>
-        <div id="activities"></div>
+        <div
+          id="activities"
+          class="w-[calc(20%-10px)] bg-white p-5 rounded-2xl flex flex-col gap-4">
+          <div
+            class="flex flex-col justify-center items-center gap-5 border-b border-dashed pb-3">
+            <div class="flex gap-5 justify-center items-center">
+              <img src="assets/activity.png" alt="" />
+              <h1>Activity Log</h1>
+            </div>
+            <button
+              class="completedBtn btn btn-primary w-fit bg-[#3752FD] rounded-lg border-none">
+              Clear History
+            </button>
+          </div>
+          <div id="histories" class="flex flex-col gap-4">
+            <div id="history" class="p-2 bg-[#F4F7FF] rounded-md">
+              <p class="text-sm opacity-70">
+                <span id="staticText">You Have Completed The Task </span>
+                <span id="synamicTittle">Add Dark Mode </span>
+                <span id="staticAt">at </span>
+                <span id="dynamicTime">12:48:15 PM</span>
+              </p>
+            </div>
+            <div id="history" class="p-2 bg-[#F4F7FF] rounded-md">
+              <p class="text-sm opacity-70">
+                <span id="staticText">You Have Completed The Task </span>
+                <span id="synamicTittle">Add Dark Mode </span>
+                <span id="staticAt">at </span>
+                <span id="dynamicTime">12:48:15 PM</span>
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
     </section>
     <script src="scripts/script.js"></script>
