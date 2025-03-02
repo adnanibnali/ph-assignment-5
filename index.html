@@ -11,7 +11,7 @@
       type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body class="poppinsThin bg-blue-100 h-[100vh]">
+  <body class="poppinsThin bg-blue-100">
     <!-- HERRO SECTION -->
     <section id="herro" class="max-w-[96rem] mx-auto">
       <!-- NAVBAR STARTS HERE -->
@@ -47,7 +47,7 @@
             class="flex items-center justify-center gap-6">
             <div
               id="assignedTasksContainer"
-              class="bg-[#F4F7FF] w-fit h-32 flex justify-center items-center gap-5 py-3 px-5 rounded-xl">
+              class="bg-[#F4F7FF] w-[calc((100%-48px)/4)] h-32 flex justify-center items-center gap-5 py-3 px-5 rounded-xl">
               <img
                 src="assets/checkbox.png"
                 alt=""
@@ -59,7 +59,7 @@
             </div>
             <div
               id="discover"
-              class="w-[32rem] h-32 rounded-xl bg-linear-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] flex justify-center items-center relative cursor-pointer">
+              class="w-[calc((100%-48px)/2)] h-32 rounded-xl bg-linear-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] flex justify-center items-center relative cursor-pointer">
               <img src="assets/board.png" alt="" class="absolute left-6" />
               <p class="text-2xl text-white">
                 Discover Something New <br />Today!
@@ -67,7 +67,7 @@
             </div>
             <div
               id="currentDateContainer"
-              class="bg-[#F4F7FF] w-fit h-32 flex justify-center items-center gap-5 py-3 px-5 rounded-xl">
+              class="bg-[#F4F7FF] w-[calc((100%-48px)/4)] h-32 flex justify-center items-center gap-5 py-3 px-5 rounded-xl">
               <img
                 src="assets/checkbox.png"
                 alt=""
@@ -78,7 +78,182 @@
               </div>
             </div>
           </div>
-          <div id="taskOverview"></div>
+          <div id="taskCardsContainer" class="grid grid-cols-3 gap-10 mt-10">
+            <!-- THIS IS A CARD -->
+            <div class="card bg-[#F4F7FF] w-fit shadow-sm">
+              <div class="card-body gap-5">
+                <button class="w-fit btn border-none bg-white rounded-xl">
+                  ShopEase
+                </button>
+                <h2 class="card-title">Fix Mobile Button Issue</h2>
+                <div class="w-[18rem] h-[5rem] bg-white rounded-md p-5">
+                  <p
+                    class="opacity-50 overflow-hidden text-ellipsis whitespace-nowrap">
+                    Debug using Chrome DevTools, check for overlapping elements,
+                    and ensure onClick works properly and ensure onClick works
+                    properly
+                  </p>
+                </div>
+
+                <div class="card-actions justify-between">
+                  <div>
+                    <p>Deadline</p>
+                    <p class="font-bold">21 March 2025</p>
+                  </div>
+                  <button
+                    class="completedBtn btn btn-primary bg-[#3752FD] rounded-lg border-none">
+                    Completed
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- CARD ENDS HERE -->
+            <!-- THIS IS A CARD -->
+            <div class="card bg-[#F4F7FF] w-fit shadow-sm">
+              <div class="card-body gap-5">
+                <button class="w-fit btn border-none bg-white rounded-xl">
+                  ShopEase
+                </button>
+                <h2 class="card-title">Fix Mobile Button Issue</h2>
+                <div class="w-[18rem] h-[5rem] bg-white rounded-md p-5">
+                  <p
+                    class="opacity-50 overflow-hidden text-ellipsis whitespace-nowrap">
+                    Debug using Chrome DevTools, check for overlapping elements,
+                    and ensure onClick works properly and ensure onClick works
+                    properly
+                  </p>
+                </div>
+
+                <div class="card-actions justify-between">
+                  <div>
+                    <p>Deadline</p>
+                    <p class="font-bold">21 March 2025</p>
+                  </div>
+                  <button
+                    class="completedBtn btn btn-primary bg-[#3752FD] rounded-lg border-none">
+                    Completed
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- CARD ENDS HERE -->
+            <!-- THIS IS A CARD -->
+            <div class="card bg-[#F4F7FF] w-fit shadow-sm">
+              <div class="card-body gap-5">
+                <button class="w-fit btn border-none bg-white rounded-xl">
+                  ShopEase
+                </button>
+                <h2 class="card-title">Fix Mobile Button Issue</h2>
+                <div class="w-[18rem] h-[5rem] bg-white rounded-md p-5">
+                  <p
+                    class="opacity-50 overflow-hidden text-ellipsis whitespace-nowrap">
+                    Debug using Chrome DevTools, check for overlapping elements,
+                    and ensure onClick works properly and ensure onClick works
+                    properly
+                  </p>
+                </div>
+
+                <div class="card-actions justify-between">
+                  <div>
+                    <p>Deadline</p>
+                    <p class="font-bold">21 March 2025</p>
+                  </div>
+                  <button
+                    class="completedBtn btn btn-primary bg-[#3752FD] rounded-lg border-none">
+                    Completed
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- CARD ENDS HERE -->
+            <!-- THIS IS A CARD -->
+            <div class="card bg-[#F4F7FF] w-fit shadow-sm">
+              <div class="card-body gap-5">
+                <button class="w-fit btn border-none bg-white rounded-xl">
+                  ShopEase
+                </button>
+                <h2 class="card-title">Fix Mobile Button Issue</h2>
+                <div class="w-[18rem] h-[5rem] bg-white rounded-md p-5">
+                  <p
+                    class="opacity-50 overflow-hidden text-ellipsis whitespace-nowrap">
+                    Debug using Chrome DevTools, check for overlapping elements,
+                    and ensure onClick works properly and ensure onClick works
+                    properly
+                  </p>
+                </div>
+
+                <div class="card-actions justify-between">
+                  <div>
+                    <p>Deadline</p>
+                    <p class="font-bold">21 March 2025</p>
+                  </div>
+                  <button
+                    class="completedBtn btn btn-primary bg-[#3752FD] rounded-lg border-none">
+                    Completed
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- CARD ENDS HERE -->
+            <!-- THIS IS A CARD -->
+            <div class="card bg-[#F4F7FF] w-fit shadow-sm">
+              <div class="card-body gap-5">
+                <button class="w-fit btn border-none bg-white rounded-xl">
+                  ShopEase
+                </button>
+                <h2 class="card-title">Fix Mobile Button Issue</h2>
+                <div class="w-[18rem] h-[5rem] bg-white rounded-md p-5">
+                  <p
+                    class="opacity-50 overflow-hidden text-ellipsis whitespace-nowrap">
+                    Debug using Chrome DevTools, check for overlapping elements,
+                    and ensure onClick works properly and ensure onClick works
+                    properly
+                  </p>
+                </div>
+
+                <div class="card-actions justify-between">
+                  <div>
+                    <p>Deadline</p>
+                    <p class="font-bold">21 March 2025</p>
+                  </div>
+                  <button
+                    class="completedBtn btn btn-primary bg-[#3752FD] rounded-lg border-none">
+                    Completed
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- CARD ENDS HERE -->
+            <!-- THIS IS A CARD -->
+            <div class="card bg-[#F4F7FF] w-fit shadow-sm">
+              <div class="card-body gap-5">
+                <button class="w-fit btn border-none bg-white rounded-xl">
+                  ShopEase
+                </button>
+                <h2 class="card-title">Fix Mobile Button Issue</h2>
+                <div class="w-[18rem] h-[5rem] bg-white rounded-md p-5">
+                  <p
+                    class="opacity-50 overflow-hidden text-ellipsis whitespace-nowrap">
+                    Debug using Chrome DevTools, check for overlapping elements,
+                    and ensure onClick works properly and ensure onClick works
+                    properly
+                  </p>
+                </div>
+
+                <div class="card-actions justify-between">
+                  <div>
+                    <p>Deadline</p>
+                    <p class="font-bold">21 March 2025</p>
+                  </div>
+                  <button
+                    class="completedBtn btn btn-primary bg-[#3752FD] rounded-lg border-none">
+                    Completed
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- CARD ENDS HERE -->
+          </div>
         </div>
         <div id="activities"></div>
       </section>
