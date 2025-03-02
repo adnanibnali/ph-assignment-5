@@ -11,7 +11,78 @@
       type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body>
+  <body class="poppinsThin bg-blue-100 h-[100vh]">
+    <!-- HERRO SECTION -->
+    <section id="herro" class="max-w-[96rem] mx-auto">
+      <!-- NAVBAR STARTS HERE -->
+      <nav
+        id="navbar"
+        class="w-full flex justify-between bg-white p-6 rounded-2xl">
+        <!-- branding section -->
+        <div id="branding" class="flex items-center justify-center gap-3">
+          <img src="assets/logo.png" alt="" />
+          <span class="text-3xl">Dev<span class="font-bold">Board</span> </span>
+        </div>
+        <!-- user utilities -->
+        <div id="userUtilities" class="flex gap-10">
+          <div
+            id="totalCompletedTasksContainer"
+            class="flex justify-center items-center gap-3 py-2 px-4 bg-[#F4F7FF] rounded-full">
+            <img src="assets/checkbox.png" alt="" />
+            <p id="totalCompletedTasks" class="text-3xl font-bold">23</p>
+          </div>
+          <div id="colorWheel" class="flex justify-center items-center">
+            <img
+              src="assets/theme-btn.png"
+              alt="This is color wheel for selecting random color for the background" />
+          </div>
+        </div>
+      </nav>
+      <!-- NAVBAR ENDS HERE -->
+      <!-- DASHBOARD SECTION STARTS HERE -->
+      <section id="dashboard">
+        <div id="dashboardOverview" class="w-fit bg-white mt-5 p-6 rounded-2xl">
+          <div
+            id="dashboardTopSection"
+            class="flex items-center justify-center gap-6">
+            <div
+              id="assignedTasksContainer"
+              class="bg-[#F4F7FF] w-fit h-32 flex justify-center items-center gap-5 py-3 px-5 rounded-xl">
+              <img
+                src="assets/checkbox.png"
+                alt=""
+                class="p-3 bg-white rounded-full" />
+              <div>
+                <p>Task Assigned</p>
+                <p class="text-3xl font-bold">5</p>
+              </div>
+            </div>
+            <div
+              id="discover"
+              class="w-[32rem] h-32 rounded-xl bg-linear-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] flex justify-center items-center relative cursor-pointer">
+              <img src="assets/board.png" alt="" class="absolute left-6" />
+              <p class="text-2xl text-white">
+                Discover Something New <br />Today!
+              </p>
+            </div>
+            <div
+              id="currentDateContainer"
+              class="bg-[#F4F7FF] w-fit h-32 flex justify-center items-center gap-5 py-3 px-5 rounded-xl">
+              <img
+                src="assets/checkbox.png"
+                alt=""
+                class="p-3 bg-white rounded-full" />
+              <div>
+                <p class="text-2xl">Wed ,</p>
+                <p class="text-2xl font-bold">Jul 28 2025</p>
+              </div>
+            </div>
+          </div>
+          <div id="taskOverview"></div>
+        </div>
+        <div id="activities"></div>
+      </section>
+    </section>
     <script src="scripts/script.js"></script>
   </body>
 </html>
